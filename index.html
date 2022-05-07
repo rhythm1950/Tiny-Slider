@@ -36,6 +36,24 @@
     </div>
 
 
+    <div class="slide-wrapper2">
+        <div>
+            <div class="slide-item"><img src="./img/1.jpg" alt=""></div>
+        </div>
+        <div>
+            <div class="slide-item"><img src="./img/2.jpg" alt=""></div>
+        </div>
+        <div>
+            <div class="slide-item"><img src="./img/3.jpg" alt=""></div>
+        </div>
+        <div>
+            <div class="slide-item"><img src="./img/4.jpg" alt=""></div>
+        </div>
+        <div>
+            <div class="slide-item"><img src="./img/5.jpg" alt=""></div>
+        </div>
+    </div>
+
     <!-- Tiny slider js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
@@ -49,7 +67,22 @@
             items: 3,
             mouseDrag: true,
             swipeAngle: false,
-            speed: 400
+            speed: 500
+        });
+    </script>
+
+    <script>
+        var slider = tns({
+            container: '.slide-wrapper2',
+            slideBy: 'page',
+            autoplay: true,
+            controls: false,
+            nav: false,
+            items: 3,
+            mouseDrag: true,
+            swipeAngle: false,
+            speed: 500,
+            axis: "vertical"
         });
     </script>
 </body>
